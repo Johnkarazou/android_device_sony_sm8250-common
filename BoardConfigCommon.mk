@@ -22,6 +22,15 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 BOARD_VENDOR := sony
 
 COMMON_PATH := device/sony/sm8250-common
+# Custom Values
+
+TARGET_USES_BLUR := true
+TARGET_ENABLE_BLUR := true
+# Enable ThinLTO Source wide 
+GLOBAL_THINLTO := true
+USE_THINLTO_CACHE := true
+SKIP_ABI_CHECKS := true
+KERNEL_LTO := thin
 
 # A/B
 AB_OTA_UPDATER := true
